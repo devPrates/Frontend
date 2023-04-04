@@ -1,0 +1,10 @@
+
+/*======= IMG BACKGROND =======*/
+/*body {
+    background-image: url(../img/carinha.jpg);
+}*/
+
+/*======= gradient BACKGROND =======*/
+body {
+    background: linear-gradient(90deg, rgba(20,105,172,1) 0%, rgba(30,165,181,1) 30%, rgba(29,198,208,1) 53%, rgba(0,212,255,1) 100%);
+}
