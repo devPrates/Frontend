@@ -7,3 +7,48 @@
 html,body{
     height: 100%;
 }
+
+body {
+    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+main {
+    padding: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: #c2e59c; 
+    background: -webkit-linear-gradient(to left, #64b3f4, #c2e59c); 
+    background: linear-gradient(to left, #64b3f4, #c2e59c); 
+    display: flex;
+    flex-direction: column;
+    padding: 56px;
+    width: 600px;
+    gap: 24px;
+}
+
+form input{
+    padding: 8px;
+}
+form button{
+    padding: 8px;
+    border-radius: 30px;
+}
+form label{
+    color: white;
+    font-size: 20px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.genero{
+    color: white;
+    
+}
