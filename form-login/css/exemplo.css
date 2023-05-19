@@ -9,11 +9,12 @@ html,body{
 }
 
 body {
-    background: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
+    background: #c2e59c; 
+    background: -webkit-linear-gradient(to left, #64b3f4, #c2e59c); 
+    background: linear-gradient(to left, #64b3f4, #c2e59c); 
 
 }
-
 
 main {
     padding: 56px;
@@ -23,9 +24,7 @@ main {
 }
 
 form {
-    background: #c2e59c; 
-    background: -webkit-linear-gradient(to left, #64b3f4, #c2e59c); 
-    background: linear-gradient(to left, #64b3f4, #c2e59c); 
+    background: white;
     display: flex;
     flex-direction: column;
     padding: 56px;
@@ -33,22 +32,52 @@ form {
     gap: 24px;
 }
 
-form input{
+form input, form select{
+    background-color: #dfdede;
     padding: 8px;
+    outline-color: #64b3f4;
+    border-radius: 5px;
+    border: none;
+}
+
+form input::placeholder{
+    color: black;
 }
 form button{
     padding: 8px;
-    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 }
-form label{
-    color: white;
+form label{ 
+    color: black;
     font-size: 20px;
 }
 .input-group{
     display: flex;
     flex-direction: column;
 }
+
+form button:hover {
+    background-color: #64b3f4;
+    transition: .3s;
+}
+
 .genero{
     color: white;
-    
+    display: flex;
+    flex-direction: column;
+}
+
+.dados-endereco {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+#cep{
+    width: 80px;
+}
+
+#logradouro{
+    width: 250px;
 }
