@@ -14,64 +14,82 @@
     <main class="container">
         
         <form action="" class="form">
+
             <h1 class="form__heading">Adicionar Cartão de Crédito</h1>
             <div class="line"></div>
+
+
             <div class="form__container">
+
                 <div class="form__inputs">
+
                     <div class="forms__input-group">
                         <label for="cardNumber">Número do Cartão</label>
-                        <input class="input" type="text" name="cardNumber" id="cardNumber">
+                        <input class="input" type="text" name="cardNumber" id="cardNumber" placeholder="Digite o número do seu cartão...">
                     </div>
+
                     <div class="forms__input-group">
-                        <label for="cardHolderName">Número do Titular</label>
-                        <input class="input" type="text" name="cardHolderName" id="cardHolderName">
+                        <label for="cardHolderName">Nome do Titular</label>
+                        <input class="input" type="text" name="cardHolderName" id="cardHolderName" placeholder="Digite o nome do titular da conta...">
                     </div>
 
                     <div class="form-input-container">
                         <div class="forms__input-group">
                             <label for="expirationDate">Validade</label>
-                            <input class="form__valid" type="text" name="expirationDate" id="expirationDate">
+                            <input class="form__valid" type="date" name="expirationDate" id="expirationDate">
                         </div>
 
                         <div class="forms__input-group">
                             <label for="securityCode">CCV</label>
-                            <input class="form__ccv" type="text" name="securityCode" id="securityCode">
+                            <input class="form__ccv" type="text" name="securityCode" id="securityCode" placeholder="000">
                         </div>
+
                     </div>
+
                 </div>
 
 
 
                 <div class="form__credit-card">
+
                     <div class="card">
+
                         <div class="card__front card__part">
+
                             <div class="front__container">
+
                                 <div class="card__heading">
                                     <h3 class="bandeira font">Credit Card</h3>
                                     <img src="./img/bandeira.png" alt="">
                                 </div>
 
-                                <div class="card__number">
+                                <div class="card__number font">
                                     <h1 class="card__digitos">1234  5678  9101  1121</h1>
                                 </div>
 
-                                <div class="card__name">
+                                <div class="card__name font">
                                     <p>Jack Lewis</p>
                                     <p>06/25</p>
                                 </div>
+
                             </div>
+
                         </div>
 
                         <div class="card__back card__part">
+
                             <div class="card__black-line"></div>
+
                             <div class="card__back-content">
+
                                 <div class="card__secret">
-                                    <p class="card__secret--last">420</p>
+                                    <p class="card__secret--last">000</p>
                                 </div>
+
                                 <img class="card__back-square card__square"
-                                    src="https://image.ibb.co/cZeFjx/little_square.png">
+                                    src="./img/visa.png">
                                 <img class="card__back-logo card__logo"
-                                    src="https://www.fireeye.com/partners/strategic-technology-partners/visa-fireeye-cyber-watch-program/_jcr_content/content-par/grid_20_80_full/grid-20-left/image.img.png/1505254557388.png">
+                                    src="./img/bank-transfer.png">
 
                             </div>
                         </div>
@@ -79,13 +97,14 @@
                     </div>
 
                     <div class="form__credit-selo">
-                        <img src="./img/escudo.png" alt="">
+                        <img class="selo__img" src="./img/escudo.png" alt="">
                         <p class="selo__text">Seus dados NÃO estão seguros</p>
                     </div>
                 </div>
 
                 
             </div>
+
             <button class="form__button">Adicionar Cartão</button>
         </form>
     </main>

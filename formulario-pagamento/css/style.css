@@ -66,6 +66,11 @@ html,body{
   height: 48px;
   border: 1px solid black;
   border-radius: 4px;
+  padding-left: 10px;
+}
+
+.input::placeholder {
+  color: var(--gray-400)
 }
 
 .form__valid {
@@ -73,6 +78,11 @@ html,body{
   height: 48px;
   border: 1px solid black;
   border-radius: 4px;
+  padding: 10px;
+}
+
+.form__ccv::placeholder {
+  color: var(--gray-400);
 }
 
 .form__ccv {
@@ -80,6 +90,7 @@ html,body{
   height: 48px;
   border: 1px solid black;
   border-radius: 4px;
+  padding: 10px;
 }
 
 label {
@@ -95,8 +106,6 @@ label {
   gap: 16px;
 }
 
-
-
 .form__credit-selo{
   display: flex;
   align-items: center;
@@ -104,12 +113,11 @@ label {
 }
 
 .card{
-width: 275px;
-height: 173px;
--webkit-perspective: 600px;
--moz-perspective: 600px;
-perspective:600px;
-
+  width: 275px;
+  height: 173px;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective:600px;
 }
 .font {
   font-family: 'Duru Sans', sans-serif;
@@ -118,7 +126,7 @@ perspective:600px;
 .front__container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 45px;
   color: white;
 }
 
@@ -130,30 +138,26 @@ perspective:600px;
 .card__name {
   display: flex;
   justify-content: space-between;
+
+  font-size: 12px;
+  line-height: 11px;
 }
 
 
-
 .card__part{
-  box-shadow: 1px 1px #aaa3a3;
-  top: 0;
+  box-shadow: 4px 8px 10px #aaa3a3;
   position: absolute;
   z-index: 1000;
   padding: 60px;
-  left: 0;
-  display: inline-block;
   width: 320px;
   height: 190px;
   background-color: var(--primary-500);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   border-radius: 8px;
-  -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
@@ -178,10 +182,10 @@ padding: 18px 0;
   background-color: #303030;
 }
 
-
 .card__back-content {
   padding: 15px 15px 0;
 }
+
 .card__secret--last {
   color: #303030;
   text-align: right;
@@ -210,12 +214,14 @@ background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, 
   position: absolute;
   bottom: 15px;
   right: 15px;
+  width: 40px;
 }
 
 .card__back-square {
   position: absolute;
   bottom: 15px;
   left: 15px;
+  width: 40px;
 }
 
 .card:hover .card__front {
@@ -229,6 +235,17 @@ background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, 
   -moz-transform: rotateY(0deg);
 }
 
+.selo__img{
+   width: 20px;
+   height: 20px;
+   margin-left: 30px;
+}
+.selo__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;  
+}
+
 .form__button {
   color: white;
   margin-top: 48px;
@@ -240,4 +257,8 @@ background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, 
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
+}
+
+.form__button:hover {
+  background-color: var(--primary-a-200);
 }
