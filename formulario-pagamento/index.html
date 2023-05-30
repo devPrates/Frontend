@@ -25,25 +25,24 @@
 
                     <div class="forms__input-group">
                         <label for="cardNumber">Número do Cartão</label>
-                        <input class="input" type="text" name="cardNumber" id="cardNumber" placeholder="Digite o número do seu cartão...">
+                        <input class="input" type="text" name="cardNumber" id="cardNumber" placeholder="Digite o número do seu cartão..." required>
                     </div>
 
                     <div class="forms__input-group">
                         <label for="cardHolderName">Nome do Titular</label>
-                        <input class="input" type="text" name="cardHolderName" id="cardHolderName" placeholder="Digite o nome do titular da conta...">
+                        <input class="input" type="text" name="cardHolderName" id="cardHolderName" placeholder="Digite o nome do titular da conta..." required>
                     </div>
 
                     <div class="form-input-container">
                         <div class="forms__input-group">
                             <label for="expirationDate">Validade</label>
-                            <input class="form__valid" type="date" name="expirationDate" id="expirationDate">
+                            <input class="form__valid" type="month" name="expirationDate" id="expirationDate" required>
                         </div>
 
                         <div class="forms__input-group">
                             <label for="securityCode">CCV</label>
-                            <input class="form__ccv" type="text" name="securityCode" id="securityCode" placeholder="000">
+                            <input class="form__ccv" type="text" name="securityCode" id="securityCode" placeholder="000" minlength="3" maxlength="3">
                         </div>
-
                     </div>
 
                 </div>
